@@ -37,8 +37,8 @@ else:
 
 # ejercicio 4 -->
 ortoedro = Ortoedro()
-result = ortoedro.definicionOrtoedro()
-if result == 8:
+result = Ortoedro.definicionOrtoedro(10, 6, 5)
+if result == {"area": 280, "volumen": 300}:
     print("ejercicio04: pass")
 else:
     print("ejercicio04: fail")

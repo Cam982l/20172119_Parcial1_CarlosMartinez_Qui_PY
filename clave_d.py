@@ -77,9 +77,19 @@ el ejercicio numero 3 convertirlo en una clase
 
 # start-->
 class Ortoedro:
-    def definicionOrtoedro(self):
-        return 0
+        def definicionOrtoedro(longitud, latitud, altura):
+            area = obtenerArea(longitud, latitud, altura)
+            volumen = obtenerVolumen(longitud, latitud, altura)
+            result = {"area": area, "volumen": volumen}
+            print(result)
+            return result
 
+        def obtenerArea(longitud, latitud, altura):
+            area = 2 * ((longitud * latitud) + (longitud * altura) + (latitud * altura))
+            return area
+
+        def obtenerVolumen(longitud, latitud, altura):
+            volumen = longitud * latitud * altura
 
 """
 ***************************************************************
@@ -125,4 +135,4 @@ github_<nombre>_<codigo>.txt y subirlo a moodle
 
 # github url-->
 def getGithubUrl():
-    return ""
+    return "https://github.com/Cam982l/GitHub_CarlosMartinez_20172119.git"
